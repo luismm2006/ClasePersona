@@ -63,10 +63,7 @@ public class Persona {
 	     * @param sexo de la persona
 	     */
 	    public Persona(String nombre, int edad, char sexo) {
-	    	this.nombre = nombre;
-	        this.edad = edad;
-	        this.sexo = sexo;
-	        comprobarSexo();
+	        this(nombre, edad, sexo, 0, 0);
 	    }
 	    /**
 	     * Constructor con 5 parametros
@@ -78,7 +75,7 @@ public class Persona {
 	     * @param altura de la persona
 	     */
 	    public Persona(String nombre, int edad, char sexo, double peso, double altura) {
-	    	this.nombre = nombre;
+	        this.nombre = nombre;
 	        this.edad = edad;
 	        this.peso = peso;
 	        this.altura = altura;
